@@ -47,10 +47,11 @@
 			<!--[% FOR link IN page.backlinks %]-->
 				[% IF loop.first %]
 				<hr class='footnotes'>
-				<b>Backlinks:</b>
+				<strong>Backlinks:</strong>
+        <ul>
 				[% END %]
-				<a href='[% uri(link) %]'>[% link.name %]</a>
-				[% IF loop.last %]<br /><br />[% END %]
+        <li><a href='[% uri(link) %]'>[% link.name %]</a></li>
+        [% IF loop.last %]</ul>[% END %]
 			<!--[% END %]-->
 			</span>
 
