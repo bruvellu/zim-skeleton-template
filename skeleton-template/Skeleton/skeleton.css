@@ -145,7 +145,7 @@ html {
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: normal;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--color-foreground); }
   /*color: #222; }*/
@@ -156,7 +156,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300;
+  font-weight: normal;
   color: var(--color-green); }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
