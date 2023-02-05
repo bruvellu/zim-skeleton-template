@@ -392,6 +392,25 @@ hr {
   display: table;
   clear: both; }
 
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+The colorscheme is based on the Tomorrow theme:
+https://github.com/chriskempson/tomorrow-theme
+*/
+
+.color-background { color: #ffffff }
+.color-current-line { color: #efefef }
+.color-selection { color: #d6d6d6 }
+.color-foreground { color: #4d4d4c }
+.color-comment { color: #8e908c }
+.color-red { color: #c82829 }
+.color-orange { color: #f5871f }
+.color-yellow { color: #eab700 }
+.color-green { color: #718c00 }
+.color-aqua { color: #3e999f }
+.color-blue { color: #4271ae }
+.color-purple { color: #8959a8 }
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
