@@ -434,6 +434,11 @@ https://github.com/chriskempson/tomorrow-theme
 .color-blue { color: #4271ae }
 .color-purple { color: #8959a8 }
 
+/* Zim
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.zim-tag { color: var(--color-orange); }
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
