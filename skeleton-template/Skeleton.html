@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>[% title %]</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="[% resource('normalize.css') %]">
+  <link rel="stylesheet" href="[% resource('skeleton.css') %]">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="[% resource('favicon.png') %]">
+
+</head>
+
+[% options.line_breaks = 'remove' %]
+[% options.empty_lines = 'remove' %]
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 5%">
+		  <!--[% FOR page IN pages %]-->
+			<h1>[% page.title %] <a name='[% anchor(page) %]'></a></h1>
+
+			[% page.body %]
+
+			<span class="backlinks">
+			<!--[% FOR link IN page.backlinks %]-->
+				[% IF loop.first %]
+				<hr class='footnotes'>
+				<b>Backlinks:</b>
+				[% END %]
+				<a href='[% uri(link) %]'>[% link.name %]</a>
+				[% IF loop.last %]<br /><br />[% END %]
+			<!--[% END %]-->
+			</span>
+
+			[% IF not loop.last %]<hr class='pageseparator'/>[% END %]
+		  <!--[% END %]-->
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
