@@ -10,6 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Root
 - Grid
 - Base Styles
 - Typography
@@ -25,6 +26,27 @@
 - Media Queries
 */
 
+/* Root variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+The colorscheme is based on the Tomorrow theme:
+https://github.com/chriskempson/tomorrow-theme
+*/
+
+:root {
+  --color-background: #ffffff;
+  --color-current-line: #efefef;
+  --color-selection: #d6d6d6;
+  --color-foreground: #4d4d4c;
+  --color-comment: #8e908c;
+  --color-red: #c82829;
+  --color-orange: #f5871f;
+  --color-yellow: #eab700;
+  --color-green: #718c00;
+  --color-aqua: #3e999f;
+  --color-blue: #4271ae;
+  --color-purple: #8959a8;
+}
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -158,9 +180,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: var(--color-blue); }
 a:hover {
-  color: #0FA0CE; }
+  color: var(--color-aqua); }
 
 
 /* Buttons
